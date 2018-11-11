@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:id="@+id/LinearLayout_valasztas"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/Button_minusz"
+            android:text="-"
+            android:textSize="30dp"
+            android:background="@drawable/buttonbackround" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextView_betu"
+            android:text=""
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorNarancs"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/Button_plusz"
+            android:text="+"
+            android:textSize="30dp"
+            android:background="@drawable/buttonbackround" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button_tippel"
+        android:layout_below="@+id/LinearLayout_valasztas"
+        android:layout_centerHorizontal="true"
+        android:text="Tippel"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="215dp"
+        android:layout_height="320dp"
+        android:id="@+id/ImageView_kep"
+        android:layout_below="@id/Button_tippel"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/akasztofa00"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/TextView_megoldas"
+        android:layout_below="@+id/ImageView_kep"
+        android:gravity="center"
+        android:text=""
+        android:textSize="35dp"
+        android:textColor="@color/colorSzurke"/>
+
+</RelativeLayout>
